@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image-container {
+    background-image: url("https://picsum.photos/id/866/900/600");
+    background-size: cover;
+    position: relative;
+    height: 300px;
+
+}
+
+
+@media (min-width: 800px) {
+    .image-container {
+        background-image: url("https://picsum.photos/id/866/1800/600");
+    }
+}
+
+.text {
+    background-color: white;
+    color: black;
+    font-size: 10vw;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
